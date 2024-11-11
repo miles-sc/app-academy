@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Favorite Programming Language</title>
+    </head>
+
+    <body>
+        <h1>Tell Us About Your Favorite Programming Language</h1>
+    </body>
+
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="firstName">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+            <div>
+                <label for="status">Status</label>
+                <select id="status" name="user_status_name">
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Guest">Guest</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <legend>Favorite Language</legend>
+
+                <div>
+                    <input type="radio" id="html" name="language" value="html" />
+                    <label for="html">HTML</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="css" name="language" value="css"  />
+                    <label for="css">CSS</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="javaScript" name="language" value="javaScript"  />
+                    <label for="javaScript">JavaScript</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="additionalInfo">Comments</label>
+                <br>
+                <textarea id="additionalInfo" name="additionalInfo" rows="3" cols="30">Additional Info</textarea>
+            </div>
+
+            <div>
+                <label for="todaysDate">Today's Date</label>
+                <input type="date" id="todaysDate" name="todaysDate" />
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newslatter" value="yes">
+                    <label for="newsletter">I'd like to recieve the newsletter</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="ula" name="ula" value="yes" required>
+                    <label for="ula">I agree to the Terms & Conditions</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Add this person</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</html>
